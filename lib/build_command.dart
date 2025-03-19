@@ -32,7 +32,7 @@ class BuildCommand extends Command {
     editor.update(['version'], semanticVersion.toString());
     var yaml = editor.toString();
     await File('./pubspec.yaml').writeAsString(yaml);
-    print('Bump version from $from to $semanticVersion');
+    print('✨ Bump version from $from to $semanticVersion');
   }
 
   Future<int> _countCommit() async {
